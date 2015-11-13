@@ -2,22 +2,22 @@
 
 class Utilisateur{
 	
-	protected $nom;
-	protected $prenom;
+	protected $_nom;
+	protected $_prenom;
 	
-	protected $id;
-	protected $mail;
-	protected $adresse;
+	protected $_id;
+	protected $_mail;
+	protected $_adresse;
 	
 	/**
 	 * Constructeur d'un utilistateur
 	 */
 	
 	function __construct($nom, $prenom, $mail, $adresse){
-		$this->nom = $nom;
-		$this->prenom = $prenom;
-		$this->mail = $mail;
-		$this->adresse = $adresse;
+		$this->_nom = $nom;
+		$this->_prenom = $prenom;
+		$this->_mail = $mail;
+		$this->_adresse = $adresse;
 	}
 	
 	
