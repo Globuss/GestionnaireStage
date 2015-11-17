@@ -1,17 +1,17 @@
 <?php
 
 /** Commentaire laissé par l'enseignant, aprés son passage dans une entreprise */
-public class Commentaire {
+class Commentaire {
 	
    //Contenu du commentaire
-   private string $contenu;
+   private  $_contenu;
 
     /**
     * Construi un commentaire
     */
-    public function __construct (string $contenu){
+    public function __construct ( $contenu){
        
-		$this->contenu = $contenu;
+		$this->_contenu = $contenu;
 	   
     }
 

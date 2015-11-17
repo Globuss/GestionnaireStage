@@ -1,35 +1,35 @@
 <?php
 
-public class Entreprise {
+class Entreprise {
    
    // Nom de l'entreprise
-   private $nom;
+   private $_nom;
    
    // Adresse de l'entreprise
-   private $adresse;
+   private $_adresse;
    // Téléphone de l'entreprise
    
-   private $tel;
+   private $_tel;
    // Type d'entreprise
    
-   private TypeEntreprise $type;
+   private $_type;
    // Liste des commentaire laissé par les enseignants
    
-   private $avis;   
-   private $stages;    
+   private $_avis;   
+   private $_stages;    
    
    /**
     * Constructeur d'un entrepris,
     * La liste des Avis et des stages sont défini si l'entreprise exist dans la BD.
     */
-   public __construct($nom, $adresse, $tel, TypeEntreprise $type) {
+   function __construct($nom, $adresse, $tel, $type) {
       
-	  $this->nom = $nom;
-	  $this->adresse = $adresse;
-	  $this->tel = $tel;
-	  $this->type = $type;
-	  $this->avis = array();
-	  $this->stages = array();
+	  $this->_nom = $nom;
+	  $this->_adresse = $adresse;
+	  $this->_tel = $tel;
+	  $this->_type = $type;
+	  $this->_avis = array();
+	  $this->_stages = array();
 	  
    }
    
@@ -37,9 +37,9 @@ public class Entreprise {
     * Ajoute un stage à la liste des offres de l'entreprise
     * @param s
     */
-   public function ajouterOffre(Stage $s) {
+   public function ajouterOffre( $s) {
       
-	  $this->stages[] = $s;
+	  $this->_stages[] = $s;
 	  
    }
    
@@ -48,7 +48,7 @@ public class Entreprise {
     * @param s stage à supprimer
     * @return True si l'offre à été supprimer, false sinon.
     */
-	public boolean supprOffre(Stage $s) {
+	public function supprOffre( $s) {
       
       //apres
 	  

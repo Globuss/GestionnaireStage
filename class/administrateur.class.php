@@ -4,31 +4,31 @@
 
 class Administrateur extends Utilisateur {
    
-	public $stage;
-	private $instance;
+	public $_stage;
+	private $_instance;
     
     private function __construct() {
 		
-		$stage = array();
+		$_stage = array();
 		
 	}
 	
 	public function getInstance() {
 		
-		if (!isSet($stage)) {
+		if (!isSet($this->_stage)) {
 			
-			$this->instance = new Administrateur();
+			$this->_instance = new Administrateur();
 			
 		}
 		
-		return $this->instance;
+		return $this->_instance;
 		
 	}
 	
   
-	public function valideAffectation(StageAffecter $stage) {
+	public function valideAffectation( $stage) {
 		  
-		$this->stage[] = $stage;
+		$this->_stage[] = $stage;
 		  
 	}
-   
+}

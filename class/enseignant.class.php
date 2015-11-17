@@ -1,25 +1,25 @@
 <?php
 
 
-public class Enseignant extends Utilisateur {
+class Enseignant extends Utilisateur {
 	
-   private $affectations;   
-   public $commentaire;
+   private $_affectations;   
+   public $_commentaire;
    
    public function __construct() {
 	   
-	   $this->affectations = array();
-	   $this->commentaire = array();
+	   $this->_affectations = array();
+	   $this->_commentaire = array();
 	   
    }
    
-   public function deposerCommentaire(Entreprise $e) {
+   public function deposerCommentaire( $e) {
       
 	  // à compléter
 	  
    }
    
-   public static function affecterStage(Stage $stage) {
+   public static function affecterStage( $stage) {
       
 	  // à compléter
 	  
