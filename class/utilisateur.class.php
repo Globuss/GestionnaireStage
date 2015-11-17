@@ -2,11 +2,19 @@
 
 class Utilisateur{
 	
+	// Nom de l'utilisateur
 	protected $_nom;
+	
+	// Prenom de l'utilisateur
 	protected $_prenom;
 	
+	// Id de l'utilisateur
 	protected $_id;
+	
+	// Mail de l'utilisateur
 	protected $_mail;
+	
+	// Adresse de l'utilisateur
 	protected $_adresse;
 	
 	/**
